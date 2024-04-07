@@ -2,7 +2,7 @@
 import React, { useContext, useState } from "react";
 import styles from "./style.module.scss";
 import { GetStarted, Landingpage, Mouse, Scroll,Menu } from "./data";
-import DropdownViewer from "./DropdownViewer";
+import DropdownViewer from "./dropdownViewer";
 import { useRouter } from "next/navigation";
 import { ActiveContext } from "@/context/activeState";
 
