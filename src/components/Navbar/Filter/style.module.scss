@@ -1,0 +1,14 @@
+/* style.module.scss */
+
+.filter {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0%;
+  top: calc(100%);
+  opacity: 0.9;
+  background-color: black; /* Dark background color */
+  -webkit-backdrop-filter : blur(8px);
+  backdrop-filter: blur(8px); /* Blur effect */
+  z-index: 0;
+}

@@ -1,0 +1,24 @@
+.active {
+  background-color: var(--blue-background);
+  color: var(--link-color);
+}
+
+.sidebarContainer {
+    overflow-y: auto; /* Ensure vertical scrollbar is always present */
+    min-height: 100%; /* Set a minimum height */
+}
+
+.sidebarContainer::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 5px;
+}
+
+.sidebarContainer::-webkit-scrollbar-thumb {
+    background: var(--light-grey);
+    border-radius: 5px;
+}
+
+.sidebarContainer::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: var(--card-background);
+}

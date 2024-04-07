@@ -1,0 +1,58 @@
+/* page.module.scss */
+.main {
+  .heading {
+    display: flex;
+    color: var(--text-primary);
+    h1 {
+      font-size: 1.8rem;
+      line-height: 40px;
+      font-weight: 500;
+    }
+  }
+
+  .tutorials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .showMoreBtnContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    .btn {
+      border-radius: 18px;
+      padding: 7.5px 55px;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+      gap: 5px;
+      background-color: var(--link-color);
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .tutorials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .tutorials {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .tutorials {
+    justify-content: center;
+  }
+}

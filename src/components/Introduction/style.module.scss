@@ -1,0 +1,97 @@
+.main {
+  color: var(--text-secondary);
+  .heading {
+    display: flex;
+    color: var(--text-secondary);
+    h1 {
+      font-size: 1.8rem;
+      line-height: 40px;
+      font-weight: 500;
+      span {
+        color: var(--text-primary);
+        font-size: 2rem;
+      }
+    }
+  }
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: flex-end;
+    color: var(--text-primary);
+    .button {
+      color: var(--link-color);
+      font-weight: 500;
+      font-size: 0.8rem;
+      transition: box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .button:hover {
+      text-decoration: underline;
+    }
+  }
+  .tutorials {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // .animationPreview {
+    //   // border: 1px solid red;
+    //   width: calc(31% + 3px);
+    //   margin-top: 20px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   border-radius: 10px;
+    //   position: relative;
+    //   .imageContainer {
+    //     height: 20vw;
+    //     max-height: 250px;
+    //     display: flex;
+    //     align-items: center;
+    //     overflow: hidden;
+    //     justify-content: center;
+    //     position: relative;
+    //     background-color: var(--card-background);
+    //     transition: transform 0.3s;
+    //     width: 100%;
+    //     border-radius: 10px;
+    //   }
+    //   .body {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 10px;
+    //     margin-top: 10px;
+    //     .info {
+    //       width: 100%;
+    //       display: flex;
+    //       flex-direction: column;
+    //       p {
+    //         font-size: 12px;
+    //         display: block;
+    //         margin-block-start: 0.5em;
+    //         margin-block-end: 0.5em;
+    //         margin-inline-start: 0px;
+    //         margin-inline-end: 0px;
+    //       }
+    //     }
+    //     .text {
+    //       width: 100%;
+    //       .button {
+    //         color: var(--text-primary);
+    //         display: block;
+    //         font-size: 1em;
+    //         // margin-block-start: 0.3em;
+    //         margin-block-end: 0.83em;
+    //         margin-inline-start: 0px;
+    //         margin-inline-end: 0px;
+    //         font-weight: bold;
+    //       }
+    //       p{
+    //         font-size: 12px;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
