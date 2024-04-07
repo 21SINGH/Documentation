@@ -3,18 +3,15 @@
 import React, { useContext } from "react";
 import styles from "./style.module.scss";
 import { useRouter } from "next/navigation";
-import { ActiveContext } from "@/context/activeState";
 import TutorialCard from "../Tutorial card";
 import { Tutorials } from "./data";
 
+
 const Introduction = () => {
-  const activeState = useContext(ActiveContext);
-  const router = useRouter();
+   const router = useRouter();
 
   const seeAll = () => {
     router.push("/getStarted/gallery");
-    const componentName = "Gallery";
-    activeState.handleComponentChange(componentName);
   };
   return (
     <div className={styles.main}>

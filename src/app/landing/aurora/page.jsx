@@ -135,9 +135,9 @@ const Aurora = () => {
               <p>
                 Let&apos;s start the project by creating a Next.js application.
                 We can do that by running{" "}
-                <code class="language-jsx">
-                  npx create<span class="token operator">-</span>next
-                  <span class="token operator">-</span>app@latest client
+                <code className="language-jsx">
+                  npx create<span className="token operator">-</span>next
+                  <span className="token operator">-</span>app@latest client
                 </code>
                 {" "}inside of a terminal.
               </p>
@@ -182,14 +182,14 @@ const Aurora = () => {
               </p>
               <div className="multicode">
                 <div className="titleContainer">
-                  <div class="titles">
-                    <div class="title">
+                  <div className="titles">
+                    <div className="title">
                       <h7 className="active">page.js</h7>
                     </div>
                   </div>
                 </div>
                 <div className="codeContainer">
-                  <pre class="prism-code language-jsx">
+                  <pre className="prism-code language-jsx">
                     <code
                       dangerouslySetInnerHTML={{
                         __html: DOMPurify.sanitize(highlightedCode),

@@ -14,124 +14,7 @@ export const GetStarted = [
   }
 ];
 
-export const Mouse = [
-    {
-        header: "Mouse",
-        body: [
-          {
-            title: "Blended Mode Cursor",
-            link : "/mouse/blendedMode"
-          },
-          {
-            title: "Creative Buttons",
-            link : "/"
-          },
-          {
-            title: "Sticky Cursor",
-            link : "/contact"
-          },
-          {
-            title: "Split Vignette",
-            link : "/"
-          },
-          {
-            title: "Text Gooey",
-            link : "/"
-          },
-          {
-            title: "Magnetic Button",
-            link : "/"
-          },
-          {
-            title: "Mask Cursor Effect",
-            link : "/"
-          },
-          {
-            title: "Svg Bezier Curve",
-            link : "/"
-          },
-        ],
-      },
-]
-export const Scroll = [
-  {
-      header: "Scroll",
-      body: [
-        {
-          title: "Blended Mode Cursor",
-          link : "/contact"
-        },
-        {
-          title: "Creative Buttons",
-          link : "/"
-        },
-        {
-          title: "Sticky Cursor",
-          link : "/contact"
-        },
-        {
-          title: "Split Vignette",
-          link : "/"
-        },
-        {
-          title: "Text Gooey",
-          link : "/"
-        },
-        {
-          title: "Magnetic Button",
-          link : "/"
-        },
-        {
-          title: "Mask Cursor Effect",
-          link : "/"
-        },
-        {
-          title: "Svg Bezier Curve",
-          link : "/"
-        },
-      ],
-    },
-]
 
-export const Menu = [
-  {
-      header: "Menu",
-      body: [
-        {
-          title: "Blended Mode Cursor",
-          link : "/contact"
-        },
-        {
-          title: "Creative Buttons",
-          link : "/"
-        },
-        {
-          title: "Sticky Cursor",
-          link : "/contact"
-        },
-        {
-          title: "Split Vignette",
-          link : "/"
-        },
-        {
-          title: "Text Gooey",
-          link : "/"
-        },
-        {
-          title: "Magnetic Button",
-          link : "/"
-        },
-        {
-          title: "Mask Cursor Effect",
-          link : "/"
-        },
-        {
-          title: "Svg Bezier Curve",
-          link : "/"
-        },
-      ],
-    },
-]
 export const Landingpage = [
   {
       header: "Landing Page",
@@ -142,4 +25,124 @@ export const Landingpage = [
         },
       ],
     },
+]
+
+
+export const Mouse = [
+  {
+      header: "Mouse",
+      body: [
+        {
+          title: "Blended Mode Cursor",
+          link : "/mouse/blendedMode"
+        },
+        {
+          title: "Creative Buttons",
+          link : "/"
+        },
+        {
+          title: "Sticky Cursor",
+          link : "/contact"
+        },
+        {
+          title: "Split Vignette",
+          link : "/"
+        },
+        {
+          title: "Text Gooey",
+          link : "/"
+        },
+        {
+          title: "Magnetic Button",
+          link : "/"
+        },
+        {
+          title: "Mask Cursor Effect",
+          link : "/"
+        },
+        {
+          title: "Svg Bezier Curve",
+          link : "/"
+        },
+      ],
+    },
+]
+export const Scroll = [
+{
+    header: "Scroll",
+    body: [
+      {
+        title: "Blended Mode Cursor",
+        link : "/contact"
+      },
+      {
+        title: "Creative Buttons",
+        link : "/"
+      },
+      {
+        title: "Sticky Cursor",
+        link : "/contact"
+      },
+      {
+        title: "Split Vignette",
+        link : "/"
+      },
+      {
+        title: "Text Gooey",
+        link : "/"
+      },
+      {
+        title: "Magnetic Button",
+        link : "/"
+      },
+      {
+        title: "Mask Cursor Effect",
+        link : "/"
+      },
+      {
+        title: "Svg Bezier Curve",
+        link : "/"
+      },
+    ],
+  },
+]
+
+export const Menu = [
+{
+    header: "Menu",
+    body: [
+      {
+        title: "Blended Mode Cursor",
+        link : "/contact"
+      },
+      {
+        title: "Creative Buttons",
+        link : "/"
+      },
+      {
+        title: "Sticky Cursor",
+        link : "/contact"
+      },
+      {
+        title: "Split Vignette",
+        link : "/"
+      },
+      {
+        title: "Text Gooey",
+        link : "/"
+      },
+      {
+        title: "Magnetic Button",
+        link : "/"
+      },
+      {
+        title: "Mask Cursor Effect",
+        link : "/"
+      },
+      {
+        title: "Svg Bezier Curve",
+        link : "/"
+      },
+    ],
+  },
 ]

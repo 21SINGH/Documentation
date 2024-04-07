@@ -1,5 +1,4 @@
-// RootLayout.js
-"use client";
+"use client"
 
 import React from "react";
 import { Inter } from "next/font/google";
@@ -8,12 +7,12 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { metadata } from "./metadata";
 import Sidebar from "@/components/Sidebar";
-import { ActiveProvider } from "@/context/activeState";
 import Foot from "@/components/Foot";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+ 
   const [lightMode, setLightMode] = useState(() => {
     // Check if window is defined before accessing localStorage
     if (typeof window !== "undefined") {
@@ -56,7 +55,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />{" "}
         {/* Set description from metadata */}
       </head>
-      <ActiveProvider>
+     
         <body className={inter.className}>
           <Navbar toggleStyle={toggleStyle} lightMode={lightMode} />
           <div className="home">
@@ -66,10 +65,10 @@ export default function RootLayout({ children }) {
             <div className="container">{children}</div>
           </div>
           <div className="foot">
-          <Foot />
+            <Foot />
           </div>
         </body>
-      </ActiveProvider>
+
     </html>
   );
 }

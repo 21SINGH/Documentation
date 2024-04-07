@@ -3,14 +3,11 @@
 import React, { useContext } from "react";
 import styles from "./style.module.scss"
 import { useRouter } from "next/navigation";
-import { ActiveContext } from "@/context/activeState";
+
 const TutorialCard = ({date , title , info , route}) => {
     const Router = useRouter();
-    const activeState = useContext(ActiveContext);
 
     const handleRoute = () => {
-        const componentName = title;
-        activeState.handleComponentChange(componentName);
         Router.push(route);
     }
 

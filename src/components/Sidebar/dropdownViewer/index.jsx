@@ -1,5 +1,7 @@
 // DropdownViewer.js
 import React from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 import styles from "./style.module.scss";
 
 const DropdownViewer = ({
@@ -8,14 +10,14 @@ const DropdownViewer = ({
   toggleDropdown,
   handleClick,
   router,
-  activeComponent,
-  onComponentChange,
 }) => {
-  const handleItemClick = (dropdownIndex, bodyIndex ,bodyItem) => {
+  const pathname = usePathname();
+
+  const url = `${pathname}`;
+
+  const handleItemClick = (dropdownIndex, bodyIndex, bodyItem) => {
     handleClick(bodyIndex);
     router.push(bodyItem.link);
-    const componentName = dropdowns[dropdownIndex].body[bodyIndex].title;
-    onComponentChange(componentName);
   };
 
   return (
@@ -52,10 +54,10 @@ const DropdownViewer = ({
             {item.body.map((bodyItem, bodyIndex) => (
               <div
                 className={`${styles.el} ${
-                  bodyItem.title === activeComponent ? styles.active : ""
+                  url === bodyItem.link ? styles.active : ""
                 }`}
                 key={bodyIndex}
-                onClick={() => handleItemClick(index, bodyIndex , bodyItem)}
+                onClick={() => handleItemClick(index, bodyIndex, bodyItem)}
               >
                 <p>{bodyItem.title}</p>
               </div>
