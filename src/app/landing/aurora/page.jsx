@@ -2,13 +2,10 @@
 
 import React from "react";
 import styles from "./page.module.scss";
-import Link from "next/link";
-import Image from "next/image";
-import Prism, { languages } from "prismjs"; // Import Prism.js
+import Prism from "prismjs"; // Import Prism.js
 import "prismjs/components/prism-jsx";
 import "../../prism-theme.css";
-import { useEffect, useState } from "react";
-import { code, indexCode, indexStyle } from "./data";
+import { code, indexCode, indexStyle,theadComponent } from "./data";
 import Code from "@/components/Code";
 import Theader from "@/components/Tutorial Header";
 
@@ -28,16 +25,6 @@ const Aurora = () => {
     { heading: "components/AuroHero/style.module.scss", content: auroraStyle,copyContent :indexStyle },
   ];
 
-  const theadComponent = {
-    title1 : "Aurora Effect Landing Page",
-    title2 : "How to make aurora effect landing page using Next.js and Framer Motion.",
-    decscription1 : "A website tutorial featuring a aurora effect, where the lower part of the screen feels like aur from",
-    span:"Ladakh India,",
-    decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
-    demoLink : "/getStarted/gallery",
-    SourceCode : "/getStarted/gallery",
-    video : "/videos/aurora.mp4"
-  }
 
   return (
     <div className={styles.main}>

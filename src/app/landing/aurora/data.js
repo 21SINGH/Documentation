@@ -75,3 +75,14 @@ export const indexStyle = `// style.module.scss
   }
 }
 `;
+
+export const theadComponent = {
+  title1 : "Aurora Effect Landing Page",
+  title2 : "How to make aurora effect landing page using Next.js and Framer Motion.",
+  decscription1 : "A website tutorial featuring a aurora effect, where the lower part of the screen feels like aur from",
+  span:"Ladakh India,",
+  decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
+  demoLink : "/getStarted/gallery",
+  SourceCode : "/getStarted/gallery",
+  video : "/videos/aurora.mp4"
+}
