@@ -61,7 +61,7 @@ const Theader = ({ theadComponent }) => {
           ></path>
         </svg>
       </Link>
-      <Link className={styles.sourceCode} href={theadComponent.SourceCode}>
+      <a target="blank" className={styles.sourceCode} href={theadComponent.SourceCode}>
         Source Code{" "}
         <svg
           width="9"
@@ -75,7 +75,7 @@ const Theader = ({ theadComponent }) => {
             fill="#4479E2"
           ></path>
         </svg>
-      </Link>
+      </a>
       <div className={styles.videoContainer}>
         <video
           className={styles.video}

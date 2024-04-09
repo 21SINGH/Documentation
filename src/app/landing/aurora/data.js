@@ -82,7 +82,7 @@ export const theadComponent = {
   decscription1 : "A website tutorial featuring a aurora effect, where the lower part of the screen feels like aur from",
   span:"Ladakh India,",
   decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
-  demoLink : "/getStarted/gallery",
-  SourceCode : "/getStarted/gallery",
+  demoLink : "#",
+  SourceCode : "https://github.com/21SINGH/DEVLOG/tree/main/aurora",
   video : "/videos/aurora.mp4"
 }
