@@ -111,7 +111,7 @@ const Aurora = () => {
             <div className={styles.videoContainer}>
               <video
                 className={styles.video}
-                src="/videos/aurora.mov"
+                src="/videos/aurora.mp4"
                 width="100%"
                 height={100}
                 preload="auto"
