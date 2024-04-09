@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import styles from "./page.module.scss";
-import { Tutorials } from "./data";
+import { Tutorials } from "@/lib/data";
 import TutorialCard from "@/components/Tutorial card";
 
 const Index = () => {
@@ -25,6 +25,7 @@ const Index = () => {
               title={tutorial.title}
               info={tutorial.info}
               route={tutorial.route}
+              videoUrl ={tutorial.videoUrl}
             />
           );
         })}

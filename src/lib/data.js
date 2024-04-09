@@ -6,4 +6,5 @@ export const Tutorials = [
         route : "/landing/aurora",
         videoUrl :'/videos/aurora.mp4'
     },
+    
 ]

@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import styles from "./style.module.scss";
 import { useRouter } from "next/navigation";
 import TutorialCard from "../Tutorial card";
-import { Tutorials } from "./data";
+import { Tutorials } from "@/lib/data";
 
 
 const Introduction = () => {
@@ -36,6 +36,7 @@ const Introduction = () => {
               title={tutorial.title}
               info={tutorial.info}
               route = {tutorial.route} 
+              videoUrl={tutorial.videoUrl}
             />
           );
         })}
