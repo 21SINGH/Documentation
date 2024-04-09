@@ -49,18 +49,7 @@ const Sidebar = () => {
           handleClick={handleClick}
           router={router}
         />
-      </div>
-      {/* <div className={styles.landing}>
-        <DropdownViewer
-          dropdowns={Scroll}
-          isOpen={dropdownStates.scroll}
-          activeItem={activeItem}
-          toggleDropdown={() => toggleDropdown("scroll")}
-          handleClick={handleClick}
-          router={router}
-        />
-      </div> */}
-      
+      </div>      
     </div>
   );
 };

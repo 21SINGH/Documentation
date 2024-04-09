@@ -8,24 +8,8 @@ import Prism, { languages } from "prismjs"; // Import Prism.js
 import "prismjs/components/prism-jsx";
 import "../../prism-theme.css";
 import { useEffect, useState } from "react";
-import DOMPurify from "isomorphic-dompurify";
-
-const code = `'use client'
-import Introduction from '@/components/Introduction'
-import React from 'react'
-// import styles from "./page.module.scss"
-
-const page = () => {
-  // console.log(activeComponent)
-  return (
-    <div>
-      <Introduction />
-    </div>
-  )
-}
-
-export default page
-`;
+import { code, indexCode, indexStyle } from "./data";
+import Code from "@/components/Code";
 
 const hilight = (code, language = "markup") => {
   return Prism.highlight(code, Prism.languages[language], language);
@@ -33,7 +17,15 @@ const hilight = (code, language = "markup") => {
 
 const Aurora = () => {
   const language = "jsx";
-  const highlightedCode = hilight(code, language);
+  const pageCode = hilight(code, language);
+  const auroraIndex = hilight(indexCode, language);
+  const auroraStyle = hilight(indexStyle, language);
+
+  const pageCodeSnippets = [{ heading: "Page Component", content: pageCode,copyContent :code }];
+  const auroraCodeSnippets = [
+    { heading: "components/AuroHero/index.jsx", content: auroraIndex , copyContent :indexCode },
+    { heading: "components/AuroHero/style.module.scss", content: auroraStyle,copyContent :indexStyle },
+  ];
 
   return (
     <div className={styles.main}>
@@ -119,7 +111,7 @@ const Aurora = () => {
             <div className={styles.videoContainer}>
               <video
                 className={styles.video}
-                src="/videos/5.mp4"
+                src="/videos/aurora.mp4"
                 width="100%"
                 height={100}
                 preload="auto"
@@ -138,8 +130,8 @@ const Aurora = () => {
                 <code className="language-jsx">
                   npx create<span className="token operator">-</span>next
                   <span className="token operator">-</span>app@latest client
-                </code>
-                {" "}inside of a terminal.
+                </code>{" "}
+                inside of a terminal.
               </p>
               <h2>Adding the HTML and CSS</h2>
               <p>
@@ -180,24 +172,9 @@ const Aurora = () => {
                 The parent component will act as the parent of the two main
                 components.
               </p>
-              <div className="multicode">
-                <div className="titleContainer">
-                  <div className="titles">
-                    <div className="title">
-                      <h7 className="active">page.js</h7>
-                    </div>
-                  </div>
-                </div>
-                <div className="codeContainer">
-                  <pre className="prism-code language-jsx">
-                    <code
-                      dangerouslySetInnerHTML={{
-                        __html: DOMPurify.sanitize(highlightedCode),
-                      }}
-                    ></code>
-                  </pre>
-                </div>
-              </div>
+              <Code codes={pageCodeSnippets} />
+              <h3>Aurora Hero Component</h3>
+              <Code codes={auroraCodeSnippets} />
             </div>
           </div>{" "}
         </div>
