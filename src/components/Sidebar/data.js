@@ -26,6 +26,17 @@ export const Landingpage = [
       ],
     },
 ]
+export const Preloader = [
+  {
+      header: "Preloader",
+      body: [
+        {
+          title: "Curve Preloader",
+          link : "/preloader/curve"
+        },
+      ],
+    },
+]
 
 
 export const Mouse = [

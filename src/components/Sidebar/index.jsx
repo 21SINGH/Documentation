@@ -1,7 +1,7 @@
 // Sidebar.js
 import React, { useState } from "react";
 import styles from "./style.module.scss";
-import { GetStarted, Landingpage, Scroll, Menu } from "./data";
+import { GetStarted, Landingpage, Preloader } from "./data";
 import DropdownViewer from "./dropdownViewer";
 import { useRouter } from "next/navigation"; // Import useRouter from Next.js instead of next/navigation
 
@@ -9,8 +9,9 @@ const Sidebar = () => {
   const [dropdownStates, setDropdownStates] = useState({
     getStarted: true,
     landing: true,
-    scroll : true,
-    menu: true
+    scroll: true,
+    menu: true,
+    preloader: true,
   });
 
   const [activeItem, setActiveItem] = useState(null); // State to track the active item
@@ -18,7 +19,7 @@ const Sidebar = () => {
   const toggleDropdown = (dropdownName) => {
     setDropdownStates((prevState) => ({
       ...prevState,
-      [dropdownName]: !prevState[dropdownName]
+      [dropdownName]: !prevState[dropdownName],
     }));
   };
 
@@ -49,10 +50,19 @@ const Sidebar = () => {
           handleClick={handleClick}
           router={router}
         />
-      </div>      
+      </div>
+      <div className={styles.preloader}>
+        <DropdownViewer
+          dropdowns={Preloader}
+          isOpen={dropdownStates.preloader}
+          activeItem={activeItem}
+          toggleDropdown={() => toggleDropdown("preloader")}
+          handleClick={handleClick}
+          router={router}
+        />
+      </div>
     </div>
   );
 };
 
 export default Sidebar;
-
