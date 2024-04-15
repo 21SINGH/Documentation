@@ -6,5 +6,12 @@ export const Tutorials = [
         route : "/landing/aurora",
         videoUrl :'/videos/aurora.mp4'
     },
+    {
+        date :"April 15, 2024",
+        title : "Curve Preloader",
+        info : "A website tutorial featuring a curve preloader with text rendering over it, made with Next.js and Framer Motion. Inspired by https://dennissnellenberg.com/.",
+        route : "/preloader/curve",
+        videoUrl :'/videos/curve.mp4'
+    },
     
 ]
