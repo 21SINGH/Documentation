@@ -30,7 +30,7 @@ const Theader = ({ theadComponent }) => {
         <div className={styles.body}>
           <p className={styles.name}>Sourav Singh</p>
           <div className={styles.extra}>
-            <p>{"March 8, 2024 "}</p>
+            <p>{theadComponent.date}</p>
             <p>/</p>
             <div className={styles.difficulty}></div>
             <p>Intermediate</p>

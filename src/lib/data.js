@@ -13,5 +13,13 @@ export const Tutorials = [
         route : "/preloader/curve",
         videoUrl :'/videos/curve.mp4'
     },
+    {
+        date :"April 16, 2024",
+        title : "Circular Navbar",
+        info : "A website tutorial featuring an Awwwards curve nabar, made with Next.js and Framer Motion. Inspired by https://dennissnellenberg.com/.",
+        route : "/navbar/circularNavbar",
+        videoUrl :'/videos/curveNavbar.mov'
+    },
+    
     
 ]

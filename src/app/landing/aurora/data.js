@@ -80,6 +80,7 @@ export const theadComponent = {
   title1 : "Aurora Effect Landing Page",
   title2 : "How to make aurora effect landing page using Next.js and Framer Motion.",
   decscription1 : "A website tutorial featuring a aurora effect, where the lower part of the screen feels like aur from",
+  date:"April 9, 2024",
   span:"Ladakh India,",
   decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
   demoLink : "#",

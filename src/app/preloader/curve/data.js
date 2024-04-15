@@ -154,12 +154,15 @@ export const opacity = {
 `;
 
 export const theadComponent = {
-  title1 : "Curve Preloader",
-  title2 : "Build an Awwwards Curved Preloader using Next.js and Framer Motion.",
-  decscription1 : "A website tutorial featuring an Awwwards curve preloader with text rendering over it, made with Next.js and Framer Motion.",
-  span:"",
-  decscription2: "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
-  demoLink : "#",
-  SourceCode : "https://github.com/21SINGH/curve_preloader",
-  video : "/videos/curve.mp4"
-}
+  title1: "Curve Preloader",
+  title2: "Build an Awwwards Curved Preloader using Next.js and Framer Motion.",
+  decscription1:
+    "A website tutorial featuring an Awwwards curve preloader with text rendering over it, made with Next.js and Framer Motion.",
+  date: "April 15, 2024",
+  span: "",
+  decscription2:
+    "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
+  demoLink: "#",
+  SourceCode: "https://github.com/21SINGH/curve_preloader",
+  video: "/videos/curve.mp4",
+};

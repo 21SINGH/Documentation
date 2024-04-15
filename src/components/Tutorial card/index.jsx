@@ -28,6 +28,7 @@ const TutorialCard = ({ date, title, info, route, videoUrl }) => {
         className={styles.videoContainer}
         onMouseEnter={handleVideoHover}
         onMouseLeave={handleVideoHover}
+        onClick={handleRoute}
         whileHover={{
           translateY: -10,
           transition: { duration: 0.0000001, ease: [0.22, 1, 0.36, 1] },
