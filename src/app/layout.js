@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { metadata } from "./metadata";
 import Sidebar from "@/components/Sidebar";
 import Foot from "@/components/Foot";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,7 +63,8 @@ export default function RootLayout({ children }) {
             <div className="sidebar">
               <Sidebar />
             </div>
-            <div className="container">{children}</div>
+            <div className="container">{children}
+            <SpeedInsights /></div>
           </div>
           {/* <div className="foot">
             <Foot />
