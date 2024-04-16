@@ -1,5 +1,12 @@
 export const Tutorials = [
     {
+        date :"April 17, 2024",
+        title : "Image Parallax",
+        info : "A website tutorial featuring an Awwwards winning Image Parallax, made with Next.js and Framer Motion.",
+        route : "/scroll/imageParallax",
+        videoUrl :'/videos/imageParallax.mov'
+    },
+    {
         date :"April 9, 2024",
         title : "Aurora Effect",
         info : "A website tutorial featuring a aurora effect, where the lower part of the screen feels like aurora from Ladakh India made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
@@ -20,6 +27,5 @@ export const Tutorials = [
         route : "/navbar/circularNavbar",
         videoUrl :'/videos/curveNavbar.mov'
     },
-    
     
 ]

@@ -50,3 +50,14 @@ export const Navbar = [
     },
 ]
 
+export const ScrollTrigger = [
+  {
+      header: "Scroll Based Animation",
+      body: [
+        {
+          title: "Image Parallax",
+          link : "/scroll/imageParallax"
+        },
+      ],
+    },
+]
