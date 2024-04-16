@@ -1,5 +1,12 @@
 export const Tutorials = [
     {
+        date :"April 18, 2024",
+        title : "Spinner",
+        info : "A website tutorial featuring a spinner effect.",
+        route : "/preloader/spinner",
+        videoUrl :'/videos/spinner.mov'
+    },
+    {
         date :"April 17, 2024",
         title : "Image Parallax",
         info : "A website tutorial featuring an Awwwards winning Image Parallax, made with Next.js and Framer Motion.",

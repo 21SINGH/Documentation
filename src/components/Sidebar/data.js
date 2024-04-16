@@ -34,6 +34,10 @@ export const Preloader = [
           title: "Curve Preloader",
           link : "/preloader/curve"
         },
+        {
+          title: "Spinner",
+          link : "/preloader/spinner"
+        },
       ],
     },
 ]
@@ -60,4 +64,5 @@ export const ScrollTrigger = [
         },
       ],
     },
+    
 ]
