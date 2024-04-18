@@ -21,10 +21,10 @@ const TutorialCard = ({ date, title, info, route, videoUrl, placeImage }) => {
   };
 
   return (
-    <div className={styles.animationPreview}>
+    <div  onClick={handleRoute} className={styles.animationPreview}>
       <motion.div
         className={styles.videoContainer}
-        onClick={handleRoute}
+        // onClick={handleRoute}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         whileHover={{
