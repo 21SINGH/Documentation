@@ -61,7 +61,11 @@ const Theader = ({ theadComponent }) => {
           ></path>
         </svg>
       </Link>
-      <a target="blank" className={styles.sourceCode} href={theadComponent.SourceCode}>
+      <a
+        target="blank"
+        className={styles.sourceCode}
+        href={theadComponent.SourceCode}
+      >
         Source Code{" "}
         <svg
           width="9"
@@ -79,13 +83,11 @@ const Theader = ({ theadComponent }) => {
       <div className={styles.videoContainer}>
         <iframe
           className={styles.video}
-          src={`${theadComponent.video}?autoplay=1&controls=0&mute=1&loop=1`}
+          src={`${theadComponent.video}?autoplay=1&controls=0&mute=1&rel=0`}
           width="100%"
           height={100}
-          preload="auto"
-          autoPlay
-          loop
-          playsInline
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
       </div>
     </div>
