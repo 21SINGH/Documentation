@@ -164,5 +164,5 @@ export const theadComponent = {
     "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
   demoLink: "#",
   SourceCode: "https://github.com/21SINGH/curve_preloader",
-  video: "/videos/curve.mp4",
+  video: "https://www.youtube.com/embed/lTevd38ZhYM",
 };

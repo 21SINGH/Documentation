@@ -219,5 +219,5 @@ export const theadComponent = {
   decscription2: "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
   demoLink : "#",
   SourceCode : "https://github.com/21SINGH/circular_navbar",
-  video : "/videos/curveNavbar.mov"
+  video : 'https://www.youtube.com/embed/m_7nX2bH878'
 }

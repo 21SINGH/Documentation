@@ -73,5 +73,5 @@ export const theadComponent = {
   decscription2: "made with Next.js and scss.",
   demoLink : "#",
   SourceCode : "https://github.com/21SINGH/spinner",
-  video : "/videos/spinner.mov"
+  video : "https://www.youtube.com/embed/PP9NlwZZLL8"
 }

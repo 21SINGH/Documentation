@@ -244,5 +244,5 @@ export const theadComponent = {
   decscription2: "By using simple motion property from Frmaer Motion we can create something awesome, Inspired by https://dennissnellenberg.com/.",
   demoLink : "#",
   SourceCode : "https://github.com/21SINGH/project-section",
-  video : "/videos/projectGallery.mov"
+  video : "https://www.youtube.com/embed/qS8YmZE_0gQ"
 }

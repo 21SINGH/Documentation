@@ -190,5 +190,5 @@ export const theadComponent = {
   decscription2: "Changing posion of element were done via using useScroll and useTransform hook from framer motion.",
   demoLink : "#",
   SourceCode : "https://github.com/21SINGH/image_parallax",
-  video : "/videos/imageParallax.mov"
+  video : "https://www.youtube.com/embed/bo5DhL4RmP0"
 }

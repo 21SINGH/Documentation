@@ -77,16 +77,16 @@ const Theader = ({ theadComponent }) => {
         </svg>
       </a>
       <div className={styles.videoContainer}>
-        <video
+        <iframe
           className={styles.video}
-          src={theadComponent.video}
+          src={`${theadComponent.video}?autoplay=1&controls=0&mute=1&loop=1`}
           width="100%"
           height={100}
           preload="auto"
           autoPlay
           loop
           playsInline
-        ></video>
+        ></iframe>
       </div>
     </div>
   );

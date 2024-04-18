@@ -85,5 +85,5 @@ export const theadComponent = {
   decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
   demoLink : "#",
   SourceCode : "https://github.com/21SINGH/DEVLOG/tree/main/aurora",
-  video : "/videos/aurora.mp4"
+  video : "https://www.youtube.com/embed/rteD2vHPjaM"
 }
