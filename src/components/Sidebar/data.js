@@ -53,6 +53,18 @@ export const Navbar = [
       ],
     },
 ]
+export const Hover = [
+  {
+      header: "Hover Animation",
+      body: [
+        {
+          title: "Project Gallery",
+          link : "/hover/projectGallery"
+        },
+      ],
+    },
+]
+
 
 export const ScrollTrigger = [
   {

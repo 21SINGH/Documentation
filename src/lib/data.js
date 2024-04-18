@@ -1,5 +1,12 @@
 export const Tutorials = [
     {
+        date :"April 19, 2024",
+        title : "Project Gallery",
+        info : "A website tutorial featuring an Awwwards winning Project Gallery, made with Next.js, Framer Motion and Gsap",
+        route : "/hover/projectGallery",
+        videoUrl :'/videos/projectGallery.mov'
+    },
+    {
         date :"April 18, 2024",
         title : "Spinner",
         info : "A website tutorial featuring a spinner effect.",
