@@ -26,6 +26,7 @@ const Index = () => {
               info={tutorial.info}
               route={tutorial.route}
               videoUrl ={tutorial.videoUrl}
+              placeImage= {tutorial.placeImage}
             />
           );
         })}

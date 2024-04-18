@@ -17,10 +17,12 @@
       justify-content: center;
       position: relative;
       background-color: var(--card-background);
+      border: 0.01px solid var(--code-border);
       transition: transform 0.3s;
       width: 100%;
       border-radius: 10px;
       .video {
+        z-index:99;
         object-fit: cover;
         margin-top: 0;
         border-radius: 10px;

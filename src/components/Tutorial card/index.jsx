@@ -1,49 +1,56 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./style.module.scss";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const TutorialCard = ({ date, title, info, route, videoUrl }) => {
+const TutorialCard = ({ date, title, info, route, videoUrl, placeImage }) => {
   const Router = useRouter();
-  const videoRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleRoute = () => {
     Router.push(route);
   };
 
-  const handleVideoHover = (event) => {
-    const video = videoRef.current;
-    if (event.type === "mouseenter") {
-      video.play();
-    } else if (event.type === "mouseleave") {
-      video.pause();
-    }
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
-    <div
-      className={styles.animationPreview}
-    >
+    <div className={styles.animationPreview}>
       <motion.div
         className={styles.videoContainer}
-        onMouseEnter={handleVideoHover}
-        onMouseLeave={handleVideoHover}
         onClick={handleRoute}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         whileHover={{
           translateY: -10,
           transition: { duration: 0.0000001, ease: [0.22, 1, 0.36, 1] },
         }}
       >
-        <video
-          className={styles.video}
-          src={videoUrl}
-          width="100%"
-          height={100}
-          preload="auto"
-          loop
-          playsInline
-          ref={videoRef}
-        ></video>
+        {isHovered ? (
+          <iframe
+            className={styles.video}
+            width="100%"
+            height={315}
+            src={isHovered ? `${videoUrl}?autoplay=1&controls=0&mute=1&loop=1` : videoUrl}
+          ></iframe>
+        ) : (
+          <div className={styles.profile}>
+            <Image
+              // width={100}
+              // height={100}
+              layout="fill"
+              objectFit="cover"
+              alt="Image"
+              src={placeImage}
+            />
+          </div>
+        )}
       </motion.div>
       <div className={styles.body}>
         <div className={styles.info}>
