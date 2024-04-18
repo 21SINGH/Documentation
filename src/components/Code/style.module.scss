@@ -1,0 +1,68 @@
+.multicode {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: var(--background);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .titleContainer {
+    display: flex;
+    border: 2px solid var(--code-color);
+    border-radius: 10px 10px 0 0;
+    justify-content: space-between;
+    .titles{
+      display: flex;
+      .title {
+        /* height: 35px; */
+        padding: 5px 21px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 13px;
+      }
+      .title:first-child {
+        border-radius: 10px 0 0 0;
+      }
+      
+      .title:hover {
+        background-color: var(--blue-background);
+      }
+      .active {
+        color: var(--link-color);
+      }
+      
+    }
+    .copy{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: box-shadow .3s;
+      svg{
+        fill: var(--text-secondary);
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .copy:hover {
+      box-shadow: 0 0 21px 0 #4479e27c;
+      border: 1px solid #4479e27c;
+      /* border-radius: 10px; */
+    }
+  }
+  
+  
+  .codeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: calc(100vw - 40px);
+    max-height: 800px;
+    overflow-y: auto;
+    border-top: 0px;
+    border-right: 2px solid var(--code-color);
+    border-bottom: 2px solid var(--code-color);
+    border-left: 2px solid var(--code-color);
+  }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Inter } from "next/font/google";
@@ -7,13 +7,11 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { metadata } from "./metadata";
 import Sidebar from "@/components/Sidebar";
-import Foot from "@/components/Foot";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
- 
   const [lightMode, setLightMode] = useState(() => {
     // Check if window is defined before accessing localStorage
     if (typeof window !== "undefined") {
@@ -56,21 +54,19 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />{" "}
         {/* Set description from metadata */}
       </head>
-     
-        <body className={inter.className}>
-          <Navbar toggleStyle={toggleStyle} lightMode={lightMode} />
-          <div className="home">
-            <div className="sidebar">
-              <Sidebar />
-            </div>
-            <div className="container">{children}
-            <SpeedInsights /></div>
-          </div>
-          {/* <div className="foot">
-            <Foot />
-          </div> */}
-        </body>
 
+      <body className={inter.className}>
+        <Navbar toggleStyle={toggleStyle} lightMode={lightMode} />
+        <div className="home">
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+          <div className="container">
+            {children}
+            <SpeedInsights />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

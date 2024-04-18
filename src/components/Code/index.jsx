@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
+import styles from "./style.module.scss"
 
 const Code = ({ codes }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,23 +17,23 @@ const Code = ({ codes }) => {
   };
 
   return (
-    <div className="multicode">
-      <div className="titleContainer">
-        <div className="titles">
+    <div className={styles.multicode}>
+      <div className={styles.titleContainer}>
+        <div className={styles.titles}>
           {codes.map((code, index) => (
             <div
               key={index}
-              className="title"
+              className={styles.title}
               onClick={() => handleHeadingClick(index)}
             >
-              <h7 className={activeIndex === index ? "active" : ""}>
+              <h7 className={activeIndex === index ? `${styles.active}`: ""}>
                 {code.heading}
               </h7>
             </div>
           ))}
         </div>
 
-        <div onClick={handleCopyClick} className="copy">
+        <div onClick={handleCopyClick} className={styles.copy}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="48"
@@ -43,7 +44,7 @@ const Code = ({ codes }) => {
           </svg>
         </div>
       </div>
-      <div className="codeContainer">
+      <div className={styles.codeContainer}>
         {codes.map((code, index) => (
           <div
             key={index}
