@@ -1,4 +1,5 @@
 // Sidebar.js
+'use client'
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 import { GetStarted, Landingpage, Preloader, Navbar, ScrollTrigger , Hover} from "./data";
