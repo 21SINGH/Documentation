@@ -243,6 +243,6 @@ export const theadComponent = {
   span:"Next.js, Framer Motion and Gsap",
   decscription2: "By using simple motion property from Frmaer Motion we can create something awesome, Inspired by https://dennissnellenberg.com/.",
   demoLink : "#",
-  SourceCode : "https://github.com/21SINGH/circular_navbar",
+  SourceCode : "https://github.com/21SINGH/project-section",
   video : "/videos/projectGallery.mov"
 }
