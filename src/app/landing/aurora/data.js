@@ -83,7 +83,7 @@ export const theadComponent = {
   date:"April 9, 2024",
   span:"Ladakh India,",
   decscription2: "made with Next.js and Framer Motion. Inspired by https://www.sidebar.com/.",
-  demoLink : "#",
+  demoLink : "https://live-demo-sigma.vercel.app/aurora",
   SourceCode : "https://github.com/21SINGH/DEVLOG/tree/main/aurora",
   video : "https://www.youtube.com/embed/rteD2vHPjaM"
 }

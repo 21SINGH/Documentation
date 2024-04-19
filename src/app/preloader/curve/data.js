@@ -162,7 +162,7 @@ export const theadComponent = {
   span: "",
   decscription2:
     "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
-  demoLink: "#",
+  demoLink: "https://live-demo-sigma.vercel.app/curvePreloader",
   SourceCode: "https://github.com/21SINGH/curve_preloader",
   video: "https://www.youtube.com/embed/lTevd38ZhYM",
 };

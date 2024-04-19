@@ -188,7 +188,7 @@ export const theadComponent = {
   date:"April 17, 2024",
   span:"Lenis Scroll.",
   decscription2: "Changing posion of element were done via using useScroll and useTransform hook from framer motion.",
-  demoLink : "#",
+  demoLink : "https://live-demo-sigma.vercel.app/imageParallax",
   SourceCode : "https://github.com/21SINGH/image_parallax",
   video : "https://www.youtube.com/embed/bo5DhL4RmP0"
 }

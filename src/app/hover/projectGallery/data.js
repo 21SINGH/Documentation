@@ -242,7 +242,7 @@ export const theadComponent = {
   date:"April 16, 2024",
   span:"Next.js, Framer Motion and Gsap",
   decscription2: "By using simple motion property from Frmaer Motion we can create something awesome, Inspired by https://dennissnellenberg.com/.",
-  demoLink : "#",
+  demoLink : "https://live-demo-sigma.vercel.app/projectGallery",
   SourceCode : "https://github.com/21SINGH/project-section",
   video : "https://www.youtube.com/embed/qS8YmZE_0gQ"
 }

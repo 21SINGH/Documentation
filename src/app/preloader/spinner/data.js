@@ -71,7 +71,7 @@ export const theadComponent = {
   date:"April 18, 2024",
   span:"",
   decscription2: "made with Next.js and scss.",
-  demoLink : "#",
+  demoLink : "https://live-demo-sigma.vercel.app/spinner",
   SourceCode : "https://github.com/21SINGH/spinner",
   video : "https://www.youtube.com/embed/PP9NlwZZLL8"
 }

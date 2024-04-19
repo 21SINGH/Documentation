@@ -217,7 +217,7 @@ export const theadComponent = {
   date:"April 16, 2024",
   span:"",
   decscription2: "A curve is created using SVG path commands Inspired by https://dennissnellenberg.com/.",
-  demoLink : "#",
+  demoLink : "https://live-demo-sigma.vercel.app/circularNavbar",
   SourceCode : "https://github.com/21SINGH/circular_navbar",
   video : 'https://www.youtube.com/embed/m_7nX2bH878'
 }
