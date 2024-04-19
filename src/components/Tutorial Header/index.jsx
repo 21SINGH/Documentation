@@ -46,7 +46,7 @@ const Theader = ({ theadComponent }) => {
         {theadComponent.decscription1} <span>{theadComponent.span}</span>{" "}
         {theadComponent.decscription2}{" "}
       </p>
-      <Link className={styles.demoLink} href={theadComponent.demoLink}>
+      <Link className={styles.demoLink} target="blank" href={theadComponent.demoLink}>
         live Demo
         <svg
           width="9"
