@@ -1,5 +1,13 @@
 export const Tutorials = [
     {
+        date :"April 29, 2024",
+        title : "Awwwards 3D Earth",
+        info : "Build an Awwwards winning Project Component featuring an 3D Earth component using Nextjs, Framer Motion-3D and react-three.",
+        route : "/scroll/3D-Earth",
+        videoUrl :'https://www.youtube.com/embed/nw3aJaRQlQQ',
+        placeImage:'/medias/images/3dEarth.png',
+    },
+    {
         date :"April 19, 2024",
         title : "Project Gallery",
         info : "A website tutorial featuring an Awwwards winning Project Gallery, made with Next.js, Framer Motion and Gsap",

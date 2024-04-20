@@ -74,6 +74,10 @@ export const ScrollTrigger = [
           title: "Image Parallax",
           link : "/scroll/imageParallax"
         },
+        {
+          title: "3D Earth",
+          link : "/scroll/3D-Earth"
+        },
       ],
     },
     
