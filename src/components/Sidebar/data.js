@@ -50,6 +50,10 @@ export const Navbar = [
           title: "Circular Navbar",
           link : "/navbar/circularNavbar"
         },
+        {
+          title: "Perspective Navbar",
+          link : "/navbar/perspectiveNavbar"
+        },
       ],
     },
 ]

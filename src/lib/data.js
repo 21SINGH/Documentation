@@ -1,6 +1,14 @@
 export const Tutorials = [
     {
-        date :"April 29, 2024",
+        date :"April 21, 2024",
+        title : "Perspective Navbar",
+        info : "Build an Awwwards Perspective Menu using Nextjs and Framer Motion.",
+        route : "/navbar/perspectiveNavbar",
+        videoUrl :'https://www.youtube.com/embed/s6XHRGnIQis',
+        placeImage:'/medias/images/perspectiveNavbar.png',
+    },
+    {
+        date :"April 20, 2024",
         title : "Awwwards 3D Earth",
         info : "Build an Awwwards winning Project Component featuring an 3D Earth component using Nextjs, Framer Motion-3D and react-three.",
         route : "/scroll/3D-Earth",

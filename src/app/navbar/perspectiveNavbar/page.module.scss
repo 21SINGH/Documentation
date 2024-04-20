@@ -1,0 +1,65 @@
+.main {
+    .tutorialContainer {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      .tutorialBody {
+        height: 100%;
+        width: 80%;
+        .body {
+          .blog {
+            line-height: 1.6rem;
+            h2 {
+              font-weight: 500;
+              color: var(--text-primary);
+              font-size: 20px;
+              margin-top: 30px;
+              display: block;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+            }
+            p {
+              font-size: 14px;
+              color: var(--text-secondary);
+              line-height: 1.8rem;
+              margin-top: 10px;
+              margin-bottom: 30px;
+            }
+            .note {
+              background-color: var(--purple-background);
+              padding: 10px 20px;
+              border-radius: 10px;
+              margin-left: 10px;
+              margin-right: 10px;
+              margin-bottom: 30px;
+              h3 {
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--text-primary);
+              }
+              ul {
+                list-style-image: url(/medias/icons/arrow_blue.svg);
+                display: block;
+                list-style-type: disc;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+                li {
+                  margin-top: 12.5px;
+                  color: var(--text-secondary);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .tutorialTableofContent {
+      height: 100%;
+      width: 20%;
+    }
+  }
+  
